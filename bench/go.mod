@@ -7,8 +7,6 @@ require (
 	github.com/verax-validation/validation v0.0.0
 )
 
-require github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
+require gopkg.in/asaskevich/govalidator.v9 v9.0.0-20180315120708-ccb8e960c48f // indirect
 
 replace github.com/verax-validation/validation => ../
-
-replace github.com/go-ozzo/ozzo-validation/v4 => ../../ozzo-validation

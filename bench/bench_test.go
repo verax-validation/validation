@@ -65,7 +65,7 @@ func BenchmarkOzzoValuePass(b *testing.B) {
 		if err := validation.Validate(valuePass,
 			validation.Required,
 			validation.Length(5, 100),
-			is.EmailFormat,
+			is.Email,
 		); err != nil {
 			b.Fatal(err)
 		}
@@ -109,7 +109,7 @@ func benchVeraxStruct(u *user) error {
 func benchOzzoStruct(u *user) error {
 	return validation.ValidateStruct(u,
 		validation.Field(&u.Name, validation.Required, validation.Length(2, 64)),
-		validation.Field(&u.Email, validation.Required, is.EmailFormat),
+		validation.Field(&u.Email, validation.Required, is.Email),
 		validation.Field(&u.Age, validation.Min(18), validation.Max(120)),
 	)
 }
