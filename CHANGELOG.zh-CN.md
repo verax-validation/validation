@@ -4,7 +4,7 @@
 
 本项目的所有显著变更都记录在此文件, 格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/), 版本遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
-## [未发布]
+## 0.1.0 - 2026-08-26
 
 ### 新增
 
